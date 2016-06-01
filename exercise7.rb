@@ -14,4 +14,6 @@ number_of_students(students)
 
 students[:cohort4] = 43
 
-puts students.keys
+students.keys.each do |cohort|
+  puts cohort
+end
