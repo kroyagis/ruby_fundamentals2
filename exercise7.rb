@@ -17,3 +17,5 @@ students[:cohort4] = 43
 students.keys.each do |cohort|
   puts cohort
 end
+
+puts "Total number of students: #{students.values.inject(0) {|sum, number| sum + number}} students"
