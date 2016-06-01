@@ -1,5 +1,5 @@
 def show_grocery(item)
-  puts item
+  puts "*#{item}"
 end
 
 grocery_list = ["apple", "onion", "tofu", "nori"]
@@ -19,3 +19,5 @@ else
 end
 
 puts grocery_list[1]
+
+show_grocery(grocery_list.sort)
