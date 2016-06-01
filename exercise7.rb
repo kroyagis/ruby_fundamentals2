@@ -18,13 +18,30 @@ students.keys.each do |cohort|
   puts cohort
 end
 
-students.each do |cohort, number|
-  students[cohort] = number * 1.05
-end
+# students.each do |cohort, number|
+#   students[cohort] = number * 1.05
+# end
 
 student_list(students)
 
 students.delete(:cohort2)
 student_list(students)
 
-puts "Total number of students: #{students.values.inject(0) {|sum, number| sum + number}} students"
+total_number_students = 0
+students.values.each do |number|
+  total_number_students += number
+end
+
+puts total_number_students
+
+# def total_calculator(numbers)
+#     total_number_students = 0
+#     numbers.values.each do |number|
+#       total_number_students += number
+#     end
+#     return total_number_students
+# end
+
+# puts total_calculator(students)
+
+# puts "Total number of students: #{students.values.inject(0) {|sum, number| sum + number}} students"
