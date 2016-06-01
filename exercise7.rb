@@ -13,3 +13,5 @@ end
 number_of_students(students)
 
 students[:cohort4] = 43
+
+puts students.keys
