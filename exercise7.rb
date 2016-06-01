@@ -18,6 +18,12 @@ students.keys.each do |cohort|
   puts cohort
 end
 
+students.each do |cohort, number|
+  students[cohort] = number * 1.05
+end
+
+student_list(students)
+
 students.delete(:cohort2)
 student_list(students)
 
