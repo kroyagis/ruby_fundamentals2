@@ -11,3 +11,5 @@ def number_of_students(student)
 end
 
 number_of_students(students)
+
+students[:cohort4] = 43
